@@ -10,98 +10,206 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(to bottom, #dff5e5 0%, #ffffff 55%);
   color: #0b1f3a;
-  line-height: 1.7;
-  font-weight: 600; /* ← makes all writing bolder */
+  background: linear-gradient(
+    to bottom,
+    #c9efd6 0%,
+    #e6f7ee 45%,
+    #ffffff 70%
+  );
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ---------- HEADER ---------- */
 header {
   background: #0b1f3a;
+  padding: 30px 10px;
   text-align: center;
-  padding: 45px 15px 35px;
 }
 
-header img {
+.header-logo {
   width: 100%;
-  max-width: 480px; /* ← LOGO SIZE FIX */
+  max-width: 1000px;   /* THIS keeps it big */
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* ---------- NAV ---------- */
 nav {
-  background: #dff5e5;
-  text-align: center;
-  padding: 15px 10px;
-}
-
-nav a {
-  margin: 0 18px;
-  text-decoration: none;
+  background: #e6f7ee;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 10px;
   font-weight: 800;
-  font-size: 1.1rem;
-  color: #0b1f3a;
+  font-size: 20px;
 }
 
 /* ---------- SECTIONS ---------- */
 section {
-  max-width: 1000px;
-  margin: auto;
-  padding: 45px 20px;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
 }
 
-/* Section title boards */
 .section-title {
   background: #0b1f3a;
   color: #ffffff;
   text-align: center;
-  padding: 22px;
-  border-radius: 18px;
-  font-size: 1.9rem;
+  padding: 22px 20px;
+  border-radius: 14px;
+  font-size: 34px;
   font-weight: 900;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
-/* Text */
-section p {
-  font-size: 1.15rem;
-  font-weight: 600;
+/* ---------- TEXT ---------- */
+p {
+  font-size: 20px;
+  font-weight: 700;   /* BOLDER TEXT */
+  line-height: 1.6;
 }
 
-/* Lists */
 ul {
-  padding-left: 22px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
 }
 
 li {
-  font-size: 1.15rem;
   margin-bottom: 10px;
+}
+
+/* ---------- TABLE ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 19px;
   font-weight: 700;
 }
 
-/* ---------- PRICING TABLE ---------- */
-.price-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0 35px;
-}
-
-.price-table th,
-.price-table td {
-  padding: 14px 18px;
-  border-bottom: 1px solid #cfd8dc;
-  font-size: 1.1rem;
-}
-
-.price-table th {
+th, td {
+  padding: 14px;
+  border-bottom: 1px solid #ccc;
   text-align: left;
-  font-weight: 900;
 }
 
-.price-table td:last-child {
-  text-align: right;
-  font-weight: 800;
+th {
+  background: #0b1f3a;
+  color: white;
+}
+
+/* ---------- FOOTER IMAGE ---------- */
+.footer-image {
+  text-align: center;
+  margin: 60px 0 30px;
+}
+
+.footer-image img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #0b1f3a;
+  color: #ffffff;
+  text-align: center;
+  padding: 18px;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <img src="header-logo.png" alt="LetReadyGo Logo" class="header-logo">
+</header>
+
+<!-- NAV -->
+<nav>
+  <a href="#services">Services</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- WHO WE ARE -->
+<section>
+  <div class="section-title">Who We Are</div>
+  <p>
+    LetReadyGo™ provides professional end-of-tenancy cleaning and property
+    clearance services for letting agents, landlords, and vacant or
+    pre-move-in properties that are inspection-ready and genuinely let-ready.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-title">Our Services</div>
+  <ul>
+    <li>End of Tenancy Cleaning (EOT)</li>
+    <li>Pre-Move-In Deep Cleaning</li>
+    <li>Property Clearance & Waste Removal</li>
+    <li>Carpet Cleaning & Extraction</li>
+    <li>Steam Cleaning (Kitchens & Bathrooms)</li>
+    <li>Appliance & Oven Cleaning</li>
+  </ul>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="section-title">Pricing</div>
+
+  <table>
+    <tr>
+      <th>Property Type</th>
+      <th>From</th>
+    </tr>
+    <tr><td>Studio / 1 Bed Flat</td><td>£140</td></tr>
+    <tr><td>2 Bed Flat</td><td>£180</td></tr>
+    <tr><td>3 Bed Flat</td><td>£220</td></tr>
+    <tr><td>2 Bed House</td><td>£200</td></tr>
+    <tr><td>3 Bed House</td><td>£260</td></tr>
+    <tr><td>4 Bed House</td><td>£340</td></tr>
+    <tr><td>5+ Bed House</td><td>£400+</td></tr>
+  </table>
+
+  <p>
+    Prices apply to standard-condition, vacant properties.
+    Deep cleans are quoted separately where properties are heavily soiled.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-title">Contact</div>
+  <p>
+    Email: <strong>info@letreadygo.co.uk</strong><br>
+    Phone: <strong>07732 813072</strong>
+  </p>
+</section>
+
+<!-- TAGLINE IMAGE -->
+<div class="footer-image">
+  <img src="tagline.png" alt="Clean. Cleared. Let-Ready.">
+</div>
+
+<!-- FOOTER -->
+<footer>
+  &copy; 2026 LetReadyGo™. All rights reserved.
+</footer>
+
+</body>
+</html>  font-weight: 800;
 }
 
 /* ---------- FOOTER IMAGE ---------- */
