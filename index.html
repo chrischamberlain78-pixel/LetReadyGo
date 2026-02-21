@@ -1,205 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LetReadyGo™ | Property Clearance & Cleaning</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<title>LetReadyGo™ | Property Clearance & Cleaning</title>
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #0b1f3a;
-      background: linear-gradient(to bottom, #c9efd6 0%, #e7f7ee 100%);
-      line-height: 1.6;
-      font-weight: 600;
-    }
+<style>
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    /* ===== HEADER / LOGO ===== */
-    header {
-      background: #0b1f3a;
-      padding: 0;
-    }
+/* ===== BODY ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #c9efd6 0%, #e7f7ee 100%);
+  color: #0b1f3a;
+  line-height: 1.6;
+}
 
-    header img {
-      width: 100%;
-      height: auto;
-      display: block;
-      max-width: none; /* THIS prevents shrinking */
-    }
+/* ===== HEADER / LOGO ===== */
+header {
+  background: #0b1f3a;
+}
 
-    /* ===== NAV ===== */
-    nav {
-      background: #e6f6ea;
-      text-align: center;
-      padding: 18px 0;
-      font-weight: 800;
-    }
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-    nav a {
-      color: #0b1f3a;
-      text-decoration: none;
-      margin: 0 20px;
-      font-size: 1.2rem;
-    }
+/* ===== NAV BAR ===== */
+nav {
+  background: #2fbf71; /* BOLDER GREEN */
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 10px;
+}
 
-    /* ===== SECTIONS ===== */
-    section {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
 
-    .section-title {
-      background: #0b1f3a;
-      color: #ffffff;
-      text-align: center;
-      padding: 22px;
-      border-radius: 14px;
-      font-size: 1.9rem;
-      font-weight: 900;
-      margin-bottom: 25px;
-    }
+/* ===== SECTIONS ===== */
+section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
 
-    p {
-      font-size: 1.15rem;
-      font-weight: 700;
-    }
+.section-title {
+  background: #0b1f3a;
+  color: #ffffff;
+  text-align: center;
+  padding: 22px;
+  border-radius: 16px;
+  font-size: 1.9rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
 
-    ul {
-      padding-left: 20px;
-    }
+/* ===== TEXT ===== */
+p {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
 
-    ul li {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
+ul {
+  padding-left: 20px;
+}
 
-    /* ===== PRICING ===== */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 1.1rem;
-      font-weight: 700;
-    }
+li {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
 
-    table td {
-      padding: 10px 6px;
-    }
+/* ===== PRICING TABLE ===== */
+.pricing-box {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
 
-    table td:last-child {
-      text-align: right;
-    }
+.pricing-box h3 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
 
-    .small {
-      font-size: 0.95rem;
-      font-weight: 600;
-      margin-top: 15px;
-    }
+.pricing-box p {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
 
-    /* ===== FOOTER IMAGE ===== */
-    .footer-image {
-      text-align: center;
-      padding: 20px;
-      background: #0b1f3a;
-    }
+/* ===== FOOTER IMAGE ===== */
+.footer-image {
+  text-align: center;
+  margin: 40px 0 10px;
+}
 
-    .footer-image img {
-      width: 100%;
-      max-width: 500px;
-    }
+.footer-image img {
+  max-width: 300px;
+  width: 90%;
+}
 
-    footer {
-      background: #0b1f3a;
-      color: #ffffff;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9rem;
-    }
-  </style>
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #333;
+  padding-bottom: 30px;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <img src="header-logo.png" alt="LetReadyGo Property Clearance & Cleaning">
-  </header>
+<!-- ===== LOGO ===== -->
+<header>
+  <img src="header-logo.png" alt="LetReadyGo Property Clearance & Cleaning">
+</header>
 
-  <!-- NAV -->
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<!-- ===== NAV ===== -->
+<nav>
+  <a href="#services">Services</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <!-- WHO WE ARE -->
-  <section id="about">
-    <div class="section-title">Who We Are</div>
-    <p>
-      LetReadyGo™ provides professional end-of-tenancy cleaning and property
-      clearance services for letting agents, landlords, and vacant or
-      pre-move-in properties that are inspection-ready and genuinely let-ready.
-    </p>
-  </section>
+<!-- ===== WHO WE ARE ===== -->
+<section>
+  <div class="section-title">Who We Are</div>
+  <p>
+    LetReadyGo™ provides professional end-of-tenancy cleaning and property
+    clearance services for letting agents, landlords, and vacant or pre-move-in
+    properties that are inspection-ready and genuinely let-ready.
+  </p>
+</section>
 
-  <!-- SERVICES -->
-  <section id="services">
-    <div class="section-title">Our Services</div>
-    <ul>
-      <li>End of Tenancy Cleaning (EOT)</li>
-      <li>Pre-Move-In Deep Cleaning</li>
-      <li>Property Clearance & Waste Removal</li>
-      <li>Carpet Cleaning & Extraction</li>
-      <li>Steam Cleaning (Kitchens & Bathrooms)</li>
-      <li>Appliance & Oven Cleaning</li>
-    </ul>
-  </section>
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="section-title">Our Services</div>
+  <ul>
+    <li>End of Tenancy Cleaning (EOT)</li>
+    <li>Pre-Move-In Deep Cleaning</li>
+    <li>Property Clearance & Waste Removal</li>
+    <li>Carpet Cleaning & Extraction</li>
+    <li>Steam Cleaning (Kitchens & Bathrooms)</li>
+    <li>Appliance & Oven Cleaning</li>
+  </ul>
+</section>
 
-  <!-- PRICING -->
-  <section id="pricing">
-    <div class="section-title">Pricing</div>
+<!-- ===== PRICING ===== -->
+<section id="pricing">
+  <div class="section-title">Pricing</div>
 
-    <table>
-      <tr><td>Studio / 1 Bed</td><td>From £140</td></tr>
-      <tr><td>2 Bed Flat</td><td>From £180</td></tr>
-      <tr><td>3 Bed Flat</td><td>From £220</td></tr>
-      <tr><td>2 Bed House</td><td>From £200</td></tr>
-      <tr><td>3 Bed House</td><td>From £260</td></tr>
-      <tr><td>4 Bed House</td><td>From £340</td></tr>
-      <tr><td>5+ Bedrooms</td><td>From £400+</td></tr>
-    </table>
-
-    <p class="small">
-      Prices apply to standard-condition, vacant properties. Deep cleans apply
-      where properties are heavily soiled or neglected and will be quoted
-      separately.
-    </p>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="section-title">Contact</div>
-    <p>
-      Email: <strong>info@letreadygo.co.uk</strong><br>
-      Phone: <strong>07732 813072</strong>
-    </p>
-  </section>
-
-  <!-- TAGLINE IMAGE -->
-  <div class="footer-image">
-    <img src="tagline.png" alt="Clean. Cleared. Let-Ready.">
+  <div class="pricing-box">
+    <h3>Flats & Apartments </h3>
+    <p>1 Bed Flat – from £140</p>
+    <p>2 Bed Flat – from £180</p>
+    <p>3 Bed Flat – from £220</p>
   </div>
 
-  <!-- FOOTER -->
-  <footer>
-    &copy; 2026 LetReadyGo™. All rights reserved.
-  </footer>
+  <div class="pricing-box">
+    <h3>Houses </h3>
+    <p>2 Bed House – from £220</p>
+    <p>3 Bed House – from £260</p>
+    <p>4 Bed House – from £300</p>
+    <p>5+ Bed House – from £340</p>
+  </div>
+
+  <p>
+    Prices apply to standard-condition, vacant properties.
+    Deep cleans, heavy soiling, or neglected properties are quoted separately.
+  </p>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="section-title">Contact</div>
+  <p>Email: <strong>info@letreadygo.co.uk</strong></p>
+  <p>Phone: <strong>07732 813072</strong></p>
+</section>
+
+<!-- ===== TAGLINE ===== -->
+<div class="footer-image">
+  <img src="tagline.png" alt="Clean. Cleared. Let-Ready.">
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  &copy; 2026 LetReadyGo™. All rights reserved.
+</footer>
 
 </body>
 </html>
