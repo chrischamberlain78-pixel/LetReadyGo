@@ -1,237 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LetReadyGo™ | Property Clearance & Cleaning</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LetReadyGo™ | Property Clearance & Cleaning</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #1f2933;
-      background: linear-gradient(
-        to bottom,
-        #c9efd6 0%,
-        #e9f6ec 35%,
-        #ffffff 55%
-      );
-      line-height: 1.6;
-    }
+<style>
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #dff5e5 0%, #ffffff 55%);
+  color: #0b1f3a;
+  line-height: 1.7;
+  font-weight: 600; /* ← makes all writing bolder */
+}
 
-    header {
-      background: #0b1f3a;
-      text-align: center;
-      padding: 20px 0;
-    }
+/* ---------- HEADER ---------- */
+header {
+  background: #0b1f3a;
+  text-align: center;
+  padding: 45px 15px 35px;
+}
 
-    .header-logo {
-      width: 100%;
-      max-width: 700px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
+header img {
+  width: 100%;
+  max-width: 480px; /* ← LOGO SIZE FIX */
+  height: auto;
+}
 
-    nav {
-      background: #08172c;
-      text-align: center;
-      padding: 10px;
-    }
+/* ---------- NAV ---------- */
+nav {
+  background: #dff5e5;
+  text-align: center;
+  padding: 15px 10px;
+}
 
-    nav a {
-      color: #ffffff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+nav a {
+  margin: 0 18px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #0b1f3a;
+}
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+/* ---------- SECTIONS ---------- */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 45px 20px;
+}
 
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+/* Section title boards */
+.section-title {
+  background: #0b1f3a;
+  color: #ffffff;
+  text-align: center;
+  padding: 22px;
+  border-radius: 18px;
+  font-size: 1.9rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
 
-    h2 {
-      color: #0b1f3a;
-    }
+/* Text */
+section p {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
 
-    .section-title {
-      background: #0b1f3a;
-      color: #ffffff;
-      padding: 18px;
-      text-align: center;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
+/* Lists */
+ul {
+  padding-left: 22px;
+}
 
-    .section-title + p,
-    .section-title + ul,
-    .section-title + table {
-      margin-top: 10px;
-    }
+li {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
 
-    ul {
-      padding-left: 20px;
-    }
+/* ---------- PRICING TABLE ---------- */
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 35px;
+}
 
-    /* PRICING TABLE */
-    .price-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
+.price-table th,
+.price-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #cfd8dc;
+  font-size: 1.1rem;
+}
 
-    .price-table th,
-    .price-table td {
-      padding: 12px 0;
-    }
+.price-table th {
+  text-align: left;
+  font-weight: 900;
+}
 
-    .price-table th:first-child,
-    .price-table td:first-child {
-      width: 75%;
-      padding-right: 40px;
-    }
+.price-table td:last-child {
+  text-align: right;
+  font-weight: 800;
+}
 
-    .price-table th:last-child,
-    .price-table td:last-child {
-      width: 25%;
-      text-align: right;
-      min-width: 110px;
-    }
+/* ---------- FOOTER IMAGE ---------- */
+.footer-image img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  display: block;
+}
 
-    .small {
-      font-size: 0.9rem;
-      color: #444;
-    }
-
-    /* FOOTER IMAGE */
-    .footer-image img {
-      width: 100%;
-      max-height: 140px;
-      object-fit: cover;
-      display: block;
-    }
-
-    footer {
-      background: #08172c;
-      color: #ffffff;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-  </style>
+/* ---------- FOOTER ---------- */
+footer {
+  background: #0b1f3a;
+  color: #ffffff;
+  text-align: center;
+  padding: 18px;
+  font-size: 0.95rem;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <img src="header-logo.png" class="header-logo" alt="LetReadyGo Property Clearance">
-  </header>
+<!-- HEADER -->
+<header>
+  <img src="header-logo.png" alt="LetReadyGo Property Clearance & Cleaning">
+</header>
 
-  <!-- NAV -->
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<!-- NAV -->
+<nav>
+  <a href="#services">Services</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <!-- WHO WE ARE -->
-  <section>
-    <h2 class="section-title">Who We Are</h2>
-    <p>
-      LetReadyGo™ provides professional end-of-tenancy cleaning and property
-      clearance services for letting agents, landlords, and vacant or
-      pre–move-in properties that are inspection-ready and genuinely let-ready.
-    </p>
-  </section>
+<!-- WHO WE ARE -->
+<section>
+  <h2 class="section-title">Who We Are</h2>
+  <p>
+    <strong>LetReadyGo™</strong> provides professional end-of-tenancy cleaning and
+    property clearance services for letting agents, landlords, and vacant or
+    pre-move-in properties that are inspection-ready and genuinely let-ready.
+  </p>
+</section>
 
-  <!-- SERVICES -->
-  <section id="services">
-    <h2 class="section-title">Our Services</h2>
-    <ul>
-      <li>End of Tenancy Cleaning (EOT)</li>
-      <li>Pre–Move-In Deep Cleaning</li>
-      <li>Property Clearance & Waste Removal</li>
-      <li>Carpet Cleaning & Extraction</li>
-      <li>Steam Cleaning (Kitchens & Bathrooms)</li>
-      <li>Appliance & Oven Cleaning</li>
-    </ul>
-  </section>
+<!-- SERVICES -->
+<section id="services">
+  <h2 class="section-title">Our Services</h2>
+  <ul>
+    <li>End of Tenancy Cleaning (EOT)</li>
+    <li>Pre-Move-In Deep Cleaning</li>
+    <li>Property Clearance & Waste Removal</li>
+    <li>Carpet Cleaning & Extraction</li>
+    <li>Steam Cleaning (Kitchens & Bathrooms)</li>
+    <li>Appliance & Oven Cleaning</li>
+  </ul>
+</section>
 
-  <!-- PRICING -->
-  <section id="pricing">
-    <h2 class="section-title">Pricing</h2>
+<!-- PRICING -->
+<section id="pricing">
+  <h2 class="section-title">Pricing</h2>
 
-    <h3>Flats & Apartments</h3>
-    <table class="price-table">
-      <tr><th>Property</th><th>From</th></tr>
-      <tr><td>Studio / 1 Bed</td><td>£140</td></tr>
-      <tr><td>2 Bed</td><td>£180</td></tr>
-      <tr><td>3 Bed</td><td>£220</td></tr>
-    </table>
+  <h3>Flats & Apartments</h3>
+  <table class="price-table">
+    <tr><th>Property</th><th>From</th></tr>
+    <tr><td>Studio / 1 Bed</td><td>£140</td></tr>
+    <tr><td>2 Bed</td><td>£180</td></tr>
+    <tr><td>3 Bed</td><td>£220</td></tr>
+  </table>
 
-    <h3>Houses</h3>
-    <table class="price-table">
-      <tr><th>Property</th><th>From</th></tr>
-      <tr><td>2 Bedroom</td><td>£200</td></tr>
-      <tr><td>3 Bedroom</td><td>£260</td></tr>
-      <tr><td>4 Bedroom</td><td>£340</td></tr>
-      <tr><td>5 Bedroom+</td><td>£400+</td></tr>
-    </table>
+  <h3>Houses</h3>
+  <table class="price-table">
+    <tr><th>Property</th><th>From</th></tr>
+    <tr><td>2 Bedroom</td><td>£200</td></tr>
+    <tr><td>3 Bedroom</td><td>£260</td></tr>
+    <tr><td>4 Bedroom</td><td>£340</td></tr>
+    <tr><td>5 Bedroom+</td><td>£400+</td></tr>
+  </table>
 
-    <p><strong>Standard End of Tenancy clean for vacant properties</strong></p>
-    <p>Kitchens, bathrooms, floors, skirting boards, and internal windows included.</p>
-    <p class="small">Prices apply to standard-condition vacant properties.</p>
+  <p><strong>Standard EOT clean</strong> for vacant, standard-condition properties.</p>
 
-    <h2 class="section-title">Additional Services</h2>
-    <ul>
-      <li>Oven Cleaning (standalone) – <strong>£65</strong></li>
-      <li>Carpet Cleaning – <strong>From £35</strong></li>
-      <li>Stairs & Landing – <strong>From £50</strong></li>
-      <li>Deep Cleaning – <strong>Quoted Separately</strong></li>
-    </ul>
+  <h3 class="section-title">Additional Services</h3>
+  <ul>
+    <li>Oven Cleaning (stand-alone): <strong>£65</strong></li>
+    <li>Carpet Cleaning: <strong>From £35</strong></li>
+    <li>Stairs & Landing: <strong>From £50</strong></li>
+    <li>Deep Cleaning: <strong>Quoted separately</strong></li>
+  </ul>
 
-    <p class="small">
-      Suitable for inventory check-in / check-out.  
-      Carpet cleaning priced separately from EOT cleans.
-    </p>
+  <p class="small">
+    Deep cleans apply where properties are heavily soiled or neglected.
+    A free, no-obligation quote will always be provided.
+  </p>
 
-    <p><strong>FREE estimates · Quick turnarounds · Fully insured · 100% Satisfaction Guarantee</strong></p>
+  <p><strong>FREE estimates • Quick turnarounds • Fully insured</strong></p>
+</section>
 
-    <p class="small">
-      Deep cleans apply where properties are heavily soiled, neglected, or not
-      maintained. May include carpet cleaning, steam cleaning of tiles and grout,
-      and heavy limescale removal. A free, no-obligation quote will be provided.
-    </p>
-  </section>
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p>
+    Email: <strong>info@letreadygo.co.uk</strong><br>
+    Phone: <strong>07732 813072</strong>
+  </p>
+  <p>
+    Waste Carrier Registration:<br>
+    <strong>CBDL624217 (Lower Tier)</strong>
+  </p>
+</section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <p>
-      Email: <strong>info@letreadygo.co.uk</strong><br>
-      Phone: <strong>07732 813072</strong>
-    </p>
-    <p>
-      Waste Carrier Registration: <strong>CBDL624217 (Lower Tier)</strong>
-    </p>
-  </section>
+<!-- FOOTER IMAGE -->
+<div class="footer-image">
+  <img src="tagline.png" alt="Clean. Cleared. Let-Ready.">
+</div>
 
-  <!-- TAGLINE IMAGE -->
-  <div class="footer-image">
-    <img src="tagline.png" alt="Clean. Cleared. Let-Ready.">
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    &copy; 2026 LetReadyGo™. All rights reserved.
-  </footer>
+<!-- FOOTER -->
+<footer>
+  &copy; 2026 LetReadyGo™. All rights reserved.
+</footer>
 
 </body>
 </html>
