@@ -1,208 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LetReadyGo | Property Clearance & Cleaning</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LetReadyGo | Property Clearance & Cleaning</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #0b1f3a;
-      line-height: 1.6;
-      background:
-        linear-gradient(
-          rgba(255,255,255,0.55),
-          rgba(255,255,255,0.55)
-        ),
-        url("background-cleaning.png");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-    }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0b1f3a;
+  line-height: 1.6;
+  background:
+    linear-gradient(
+      rgba(255,255,255,0.15),
+      rgba(255,255,255,0.15)
+    ),
+    url("background-cleaning.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
-    header {
-      background: #0b1f3a;
-      text-align: center;
-    }
+/* HEADER */
+header {
+  background: #0b1f3a;
+}
+header img {
+  width: 100%;
+  display: block;
+}
 
-    header img {
-      width: 100%;
-      display: block;
-    }
+/* NAV */
+nav {
+  background: #2e9f55;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 18px 0;
+  font-weight: 800;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
 
-    nav {
-      background: #2e9f55;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      padding: 18px 0;
-      font-weight: 800;
-    }
+/* SECTIONS */
+section {
+  max-width: 1000px;
+  margin: 45px auto;
+  padding: 0 20px;
+}
 
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
+/* SECTION TITLES */
+.section-title {
+  background: #0b1f3a;
+  color: #ffffff;
+  padding: 22px;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
 
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
+/* TEXT */
+p {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+  text-align: center;
+}
 
-    .section-title {
-      background: #0b1f3a;
-      color: #ffffff;
-      padding: 22px;
-      border-radius: 14px;
-      text-align: center;
-      font-size: 1.8rem;
-      font-weight: 900;
-      margin-bottom: 25px;
-    }
+/* LISTS */
+ul {
+  list-style: disc;
+  padding-left: 22px;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+li {
+  margin-bottom: 12px;
+}
 
-    p {
-      font-size: 1.15rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
+/* PRICING – KEEP WHITE */
+.price-box {
+  background: rgba(255,255,255,0.95);
+  padding: 26px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+}
+.price-box h3 {
+  margin-bottom: 14px;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
 
-    .center-text {
-      text-align: center;
-    }
+/* CONTACT */
+.contact p {
+  font-weight: 900;
+}
 
-    ul {
-      list-style: disc;
-      padding-left: 22px;
-      font-size: 1.1rem;
-      font-weight: 700;
-    }
+/* TAGLINE */
+.tagline {
+  text-align: center;
+  margin: 50px auto 30px;
+}
+.tagline img {
+  max-width: 90%;
+  height: auto;
+}
 
-    li {
-      margin-bottom: 10px;
-    }
-
-    .price-box {
-      background: rgba(255,255,255,0.9);
-      padding: 25px;
-      border-radius: 16px;
-      margin-bottom: 25px;
-    }
-
-    .price-box h3 {
-      margin-bottom: 15px;
-      font-size: 1.4rem;
-    }
-
-    .contact {
-      text-align: center;
-      font-weight: 800;
-      font-size: 1.15rem;
-    }
-
-    /* TAGLINE IMAGE */
-    .tagline {
-      text-align: center;
-      margin: 50px auto 30px;
-    }
-
-    .tagline img {
-      max-width: 90%;
-      height: auto;
-    }
-
-    footer {
-      background: #0b1f3a;
-      color: #ffffff;
-      text-align: center;
-      padding: 20px;
-      font-weight: 700;
-    }
-  </style>
+/* FOOTER */
+footer {
+  background: #0b1f3a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-weight: 700;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <img src="header-logo.png" alt="LetReadyGo Logo">
-  </header>
+<header>
+  <img src="header-logo.png" alt="LetReadyGo Logo">
+</header>
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+  <a href="#services">Services</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section>
-    <div class="section-title">Who We Are</div>
-    <p class="center-text">
-      LetReadyGo™ provides professional end-of-tenancy cleaning and property
-      clearance services for landlords, letting agents, and vacant or
-      pre-move-in properties. We focus on clean, inspection-ready results
-      with no fuss.
-    </p>
-  </section>
+<section>
+  <div class="section-title">Who We Are</div>
+  <p>
+    LetReadyGo™ provides professional end-of-tenancy cleaning and property
+    clearance services for landlords, letting agents, and vacant or
+    pre-move-in properties. We focus on clean, inspection-ready results
+    with no fuss.
+  </p>
+</section>
 
-  <section id="services">
-    <div class="section-title">Our Services</div>
-    <ul>
-      <li>End of Tenancy Cleaning (EOT)</li>
-      <li>Pre-Move-In Deep Cleaning</li>
-      <li>Property Clearance & Waste Removal</li>
-      <li>Carpet Cleaning & Extraction</li>
-      <li>Steam Cleaning (Kitchens & Bathrooms)</li>
-      <li>Appliance & Oven Cleaning</li>
-    </ul>
-  </section>
+<section id="services">
+  <div class="section-title">Our Services</div>
+  <ul>
+    <li>End of Tenancy Cleaning (EOT)</li>
+    <li>Pre-Move-In Deep Cleaning</li>
+    <li>Property Clearance & Waste Removal</li>
+    <li>Carpet Cleaning & Extraction</li>
+    <li>Steam Cleaning (Kitchens & Bathrooms)</li>
+    <li>Appliance & Oven Cleaning</li>
+  </ul>
+</section>
 
-  <section id="pricing">
-    <div class="section-title">Pricing</div>
+<section id="pricing">
+  <div class="section-title">Pricing</div>
 
-    <div class="price-box">
-      <h3>Flats</h3>
-      <p>1 Bed Flat – from £150</p>
-      <p>2 Bed Flat – from £200</p>
-      <p>3 Bed Flat – from £260</p>
-    </div>
-
-    <div class="price-box">
-      <h3>Houses</h3>
-      <p>2 Bed House – from £220</p>
-      <p>3 Bed House – from £280</p>
-      <p>4 Bed House – from £340</p>
-      <p>5+ Bed House – from £400</p>
-    </div>
-
-    <p class="center-text">
-      Prices apply to standard-condition or slightly soiled vacant properties.
-      Deep cleans, heavy soiling, or neglected properties are quoted separately.
-    </p>
-  </section>
-
-  <section id="contact">
-    <div class="section-title">Contact</div>
-    <div class="contact">
-      <p>Email: info@letreadygo.co.uk</p>
-      <p>Phone: 07738 813072</p>
-    </div>
-  </section>
-
-  <!-- TAGLINE IMAGE AT VERY BOTTOM -->
-  <div class="tagline">
-    <img src="tagline.png" alt="Clean. Cleared. Let-Ready.">
+  <div class="price-box">
+    <h3>Flats</h3>
+    <p>1 Bed Flat – from £150</p>
+    <p>2 Bed Flat – from £200</p>
+    <p>3 Bed Flat – from £260</p>
   </div>
 
-  <footer>
-    © 2026 LetReadyGo™ — Clean. Cleared. Let-Ready.
-  </footer>
+  <div class="price-box">
+    <h3>Houses</h3>
+    <p>2 Bed House – from £220</p>
+    <p>3 Bed House – from £280</p>
+    <p>4 Bed House – from £340</p>
+    <p>5+ Bed House – from £400</p>
+  </div>
+
+  <p>
+    Prices apply to standard-condition or slightly soiled vacant properties.
+    Deep cleans, heavy soiling, or neglected properties are quoted separately.
+  </p>
+</section>
+
+<section id="contact">
+  <div class="section-title">Contact</div>
+  <div class="contact">
+    <p>Email: info@letreadygo.co.uk</p>
+    <p>Phone: 07738 813072</p>
+  </div>
+</section>
+
+<div class="tagline">
+  <img src="tagline.png" alt="Clean. Cleared. Let-Ready.">
+</div>
+
+<footer>
+  © 2026 LetReadyGo™ — Clean. Cleared. Let-Ready.
+</footer>
 
 </body>
 </html>
