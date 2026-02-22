@@ -89,7 +89,7 @@ li {
   margin-bottom: 12px;
 }
 
-/* PRICING – KEEP WHITE */
+/* PRICING */
 .price-box {
   background: rgba(255,255,255,0.95);
   padding: 26px;
@@ -102,17 +102,57 @@ li {
   font-weight: 900;
 }
 
-/* NOTE TEXT */
-.note {
-  font-size: 1rem;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 15px;
+/* CONTACT FORM */
+form {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-/* CONTACT */
-.contact p {
+form input,
+form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 2px solid #0b1f3a;
+  font-size: 1rem;
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+form button {
+  width: 100%;
+  padding: 15px;
+  background: #2e9f55;
+  color: #ffffff;
+  font-size: 1.1rem;
   font-weight: 900;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+
+form button:hover {
+  background: #238646;
+}
+
+/* CONTACT DETAILS */
+.contact-details {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+.contact-details a {
+  display: block;
+  text-align: center;
+  color: #0b1f3a;
+  text-decoration: none;
+  margin-top: 6px;
 }
 
 /* TAGLINE */
@@ -122,7 +162,6 @@ li {
 }
 .tagline img {
   max-width: 90%;
-  height: auto;
 }
 
 /* FOOTER */
@@ -181,7 +220,7 @@ footer {
     <li>Final tidy to leave gardens presentable and inspection-ready</li>
   </ul>
 
-  <p class="note">
+  <p>
     Garden services are quoted separately and provided as an optional add-on.
     Heavy landscaping, tree work, or specialist gardening is not included.
   </p>
@@ -213,10 +252,21 @@ footer {
 
 <section id="contact">
   <div class="section-title">Contact</div>
-  <div class="contact">
-    <p>Email: info@letreadygo.co.uk</p>
-    <p>Phone: 07738 813072</p>
-  </div>
+
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
+
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <textarea name="message" placeholder="How can we help?" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+    <div class="contact-details">
+      <p>📞 07732813072</p>
+      <a href="mailto:info@letreadygo.co.uk">✉️ info@letreadygo.co.uk</a>
+    </div>
+  </form>
 </section>
 
 <div class="tagline">
