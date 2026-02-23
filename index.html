@@ -17,10 +17,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #000;
   line-height: 1.6;
-  background: url("background-cleaning.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: url("background-cleaning.png") center / cover fixed no-repeat;
 }
 
 /* HEADER */
@@ -39,7 +36,7 @@ header img {
   display: block;
 }
 
-/* NAV – OFF-WHITE PILLS */
+/* NAV */
 nav {
   display: flex;
   justify-content: center;
@@ -55,7 +52,6 @@ nav a {
   border-radius: 999px;
   color: #000;
   background: linear-gradient(to bottom, #f7f7f7, #e5e5e5);
-  border: 3px solid #c0c0c0;
   box-shadow:
     inset 0 1px 0 #ffffff,
     0 4px 0 #bdbdbd,
@@ -69,7 +65,7 @@ section {
   padding: 0 20px;
 }
 
-/* SECTION TITLES – BRAND GREEN */
+/* SECTION TITLES */
 .section-title {
   background: linear-gradient(to bottom, #34b565, #2e9f55);
   color: #ffffff;
@@ -84,16 +80,10 @@ section {
     inset 0 1px 0 rgba(255,255,255,0.35),
     0 4px 0 #238646,
     0 10px 18px rgba(0,0,0,0.35);
-  text-shadow:
-    -1px -1px 0 #1d6e3b,
-     1px -1px 0 #1d6e3b,
-    -1px  1px 0 #1d6e3b,
-     1px  1px 0 #1d6e3b;
 }
 
-/* MAIN TEXT */
+/* TEXT */
 .main-text {
-  color: #000000;
   text-align: center;
   font-size: 1.05rem;
   font-weight: 700;
@@ -102,7 +92,6 @@ section {
 
 /* LISTS */
 .main-list {
-  color: #000000;
   font-size: 1.05rem;
   font-weight: 800;
   padding-left: 22px;
@@ -127,16 +116,15 @@ section {
 }
 
 .price-box h3 {
-  margin-bottom: 14px;
   font-size: 1.35rem;
   font-weight: 900;
   text-align: center;
+  margin-bottom: 14px;
 }
 
 .price-box p {
-  color: #ffffff;
-  font-weight: 700;
   text-align: center;
+  font-weight: 700;
 }
 
 /* CONTACT FORM */
@@ -159,7 +147,7 @@ form textarea {
   min-height: 120px;
 }
 
-/* SEND BUTTON – BLUE */
+/* SEND BUTTON */
 form button {
   width: 100%;
   padding: 14px;
@@ -167,42 +155,66 @@ form button {
   color: #ffffff;
   font-size: 1.05rem;
   font-weight: 900;
-  border: 3px solid #174bb3;
+  border: none;
   border-radius: 999px;
   cursor: pointer;
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,0.4),
     0 4px 0 #174bb3,
     0 10px 16px rgba(0,0,0,0.35);
-  margin-bottom: 18px;
 }
 
-form button:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.4),
-    0 6px 0 #174bb3,
-    0 12px 18px rgba(0,0,0,0.4);
-}
-
-form button:active {
-  transform: translateY(3px);
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.4),
-    0 2px 0 #174bb3,
-    0 6px 10px rgba(0,0,0,0.4);
-}
-
-/* CONTACT DETAILS */
+/* CONTACT DETAILS – UPDATED */
 .contact-details {
-  text-align: center;
-  font-weight: 800;
-  font-size: 1.05rem;
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.contact-details a {
-  color: #000;
+.contact-pill {
+  background: #000;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  border: 2px solid #1c5fd4;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.2),
+    0 4px 10px rgba(0,0,0,0.5);
+}
+
+.contact-pill a {
+  color: #fff;
   text-decoration: none;
+}
+
+/* DESIGN CREDIT */
+.design-credit {
+  text-align: center;
+  margin: 32px auto 18px;
+}
+
+.design-credit span {
+  display: block;
+  font-family: "Segoe Script", "Brush Script MT", "Lucida Handwriting", cursive;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  color: #000;
+  text-shadow:
+    0 0 4px rgba(46,159,85,0.35),
+    0 0 8px rgba(46,159,85,0.25),
+    0 2px 2px rgba(0,0,0,0.25);
+}
+
+.design-credit img {
+  max-width: 120px;
+  height: auto;
+  opacity: 0.9;
 }
 
 /* TAGLINE */
@@ -298,19 +310,26 @@ footer {
 
   <form name="contact" method="POST" data-netlify="true">
     <input type="hidden" name="form-name" value="contact">
-
     <input type="text" name="name" placeholder="Your name" required>
     <input type="email" name="email" placeholder="Your email" required>
     <textarea name="message" placeholder="How can we help?" required></textarea>
-
     <button type="submit">Send Message</button>
 
     <div class="contact-details">
-      <p>📞 07732 813072</p>
-      <a href="mailto:info@letreadygo.co.uk">✉️ info@letreadygo.co.uk</a>
+      <div class="contact-pill">📞 07732 813072</div>
+      <div class="contact-pill">
+        ✉️ <a href="mailto:info@letreadygo.co.uk">info@letreadygo.co.uk</a>
+      </div>
     </div>
   </form>
 </section>
+
+<div class="design-credit">
+  <span>Created By</span>
+  <a href="https://chrischamberlain78-pixel.github.io/simplesitestudio/" target="_blank" rel="noopener">
+    <img src="simplesitestudio.png" alt="SimpleSiteStudio">
+  </a>
+</div>
 
 <div class="tagline">
   <img src="tagline.png" alt="Clean. Cleared. Let-Ready.">
