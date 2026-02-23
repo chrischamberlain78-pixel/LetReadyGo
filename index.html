@@ -12,16 +12,12 @@
   padding: 0;
 }
 
+/* BODY */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #0b1f3a;
+  color: #000;
   line-height: 1.6;
-  background:
-    linear-gradient(
-      rgba(255,255,255,0.45),
-      rgba(255,255,255,0.45)
-    ),
-    url("background-cleaning.png");
+  background: url("background-cleaning.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -29,77 +25,118 @@ body {
 
 /* HEADER */
 header {
-  background: #0b1f3a;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.85) 60%,
+    rgba(0,0,0,0) 100%
+  );
+  text-align: center;
 }
+
 header img {
   width: 100%;
   display: block;
 }
 
-/* NAV */
+/* NAV – OFF-WHITE PILLS */
 nav {
-  background: #2e9f55;
   display: flex;
   justify-content: center;
-  gap: 40px;
-  padding: 18px 0;
-  font-weight: 800;
+  gap: 14px;
+  padding: 12px 0 8px;
 }
+
 nav a {
-  color: #ffffff;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 900;
+  padding: 9px 18px;
+  border-radius: 999px;
+  color: #000;
+  background: linear-gradient(to bottom, #f7f7f7, #e5e5e5);
+  border: 3px solid #c0c0c0;
+  box-shadow:
+    inset 0 1px 0 #ffffff,
+    0 4px 0 #bdbdbd,
+    0 8px 14px rgba(0,0,0,0.35);
 }
 
 /* SECTIONS */
 section {
   max-width: 1000px;
-  margin: 45px auto;
+  margin: 26px auto;
   padding: 0 20px;
 }
 
-/* SECTION TITLES */
+/* SECTION TITLES – BRAND GREEN */
 .section-title {
-  background: #0b1f3a;
+  background: linear-gradient(to bottom, #34b565, #2e9f55);
   color: #ffffff;
-  padding: 22px;
-  border-radius: 16px;
+  padding: 12px 30px;
+  border-radius: 999px;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.45rem;
   font-weight: 900;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  border: 3px solid #238646;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.35),
+    0 4px 0 #238646,
+    0 10px 18px rgba(0,0,0,0.35);
+  text-shadow:
+    -1px -1px 0 #1d6e3b,
+     1px -1px 0 #1d6e3b,
+    -1px  1px 0 #1d6e3b,
+     1px  1px 0 #1d6e3b;
 }
 
-/* TEXT */
-p {
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 22px;
+/* MAIN TEXT */
+.main-text {
+  color: #000000;
   text-align: center;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 /* LISTS */
-ul {
-  list-style: disc;
-  padding-left: 22px;
-  font-size: 1.1rem;
+.main-list {
+  color: #000000;
+  font-size: 1.05rem;
   font-weight: 800;
+  padding-left: 22px;
 }
-li {
-  margin-bottom: 12px;
+
+.main-list li {
+  margin-bottom: 10px;
 }
 
 /* PRICING */
 .price-box {
-  background: rgba(255,255,255,0.95);
+  background: linear-gradient(to bottom, #1a1a1a, #000);
+  color: #ffffff;
   padding: 26px;
   border-radius: 18px;
   margin-bottom: 25px;
+  border: 2px solid #2e9f55;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.12),
+    0 6px 0 #000,
+    0 12px 20px rgba(0,0,0,0.7);
 }
+
 .price-box h3 {
   margin-bottom: 14px;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 900;
+  text-align: center;
+}
+
+.price-box p {
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
 }
 
 /* CONTACT FORM */
@@ -114,30 +151,46 @@ form textarea {
   padding: 14px;
   margin-bottom: 15px;
   border-radius: 10px;
-  border: 2px solid #0b1f3a;
+  border: 2px solid #000;
   font-size: 1rem;
 }
 
 form textarea {
   min-height: 120px;
-  resize: vertical;
 }
 
+/* SEND BUTTON – BLUE */
 form button {
   width: 100%;
-  padding: 15px;
-  background: #2e9f55;
+  padding: 14px;
+  background: linear-gradient(to bottom, #2f80ed, #1c5fd4);
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 900;
-  border: none;
-  border-radius: 12px;
+  border: 3px solid #174bb3;
+  border-radius: 999px;
   cursor: pointer;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.4),
+    0 4px 0 #174bb3,
+    0 10px 16px rgba(0,0,0,0.35);
   margin-bottom: 18px;
 }
 
 form button:hover {
-  background: #238646;
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.4),
+    0 6px 0 #174bb3,
+    0 12px 18px rgba(0,0,0,0.4);
+}
+
+form button:active {
+  transform: translateY(3px);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.4),
+    0 2px 0 #174bb3,
+    0 6px 10px rgba(0,0,0,0.4);
 }
 
 /* CONTACT DETAILS */
@@ -148,28 +201,26 @@ form button:hover {
 }
 
 .contact-details a {
-  display: block;
-  text-align: center;
-  color: #0b1f3a;
+  color: #000;
   text-decoration: none;
-  margin-top: 6px;
 }
 
 /* TAGLINE */
 .tagline {
   text-align: center;
-  margin: 50px auto 30px;
+  margin: 40px auto 25px;
 }
+
 .tagline img {
   max-width: 90%;
 }
 
 /* FOOTER */
 footer {
-  background: #0b1f3a;
+  background: #000;
   color: #ffffff;
   text-align: center;
-  padding: 20px;
+  padding: 18px;
   font-weight: 700;
 }
 </style>
@@ -189,7 +240,7 @@ footer {
 
 <section>
   <div class="section-title">Who We Are</div>
-  <p>
+  <p class="main-text">
     LetReadyGo™ provides professional end-of-tenancy cleaning and property
     clearance services for landlords, letting agents, and vacant or
     pre-move-in properties. We focus on clean, inspection-ready results
@@ -199,7 +250,8 @@ footer {
 
 <section id="services">
   <div class="section-title">Our Services</div>
-  <ul>
+
+  <ul class="main-list">
     <li>End of Tenancy Cleaning (EOT)</li>
     <li>Pre-Move-In Deep Cleaning</li>
     <li>Property Clearance & Waste Removal</li>
@@ -210,19 +262,15 @@ footer {
 
   <br>
 
-  <ul>
-    <li><strong>Garden Clearance & Tidy-Up (Optional Add-On)</strong></li>
-    <li>General garden tidy-up for vacant properties</li>
-    <li>Grass cutting and basic lawn trimming</li>
-    <li>Removal of weeds and overgrowth</li>
-    <li>Clearance of leaves, green waste, and light debris</li>
-    <li>Patio and paved area sweep-down</li>
-    <li>Final tidy to leave gardens presentable and inspection-ready</li>
+  <ul class="main-list">
+    <li><strong>Basic Garden Tidy (Included)</strong></li>
+    <li>Light grass cut and quick tidy</li>
+    <li>Light rubbish removal and sweep-down</li>
+    <li>No landscaping or heavy clearance</li>
   </ul>
 
-  <p>
-    Garden services are quoted separately and provided as an optional add-on.
-    Heavy landscaping, tree work, or specialist gardening is not included.
+  <p class="main-text">
+    Heavy garden waste clearance can be quoted separately if required.
   </p>
 </section>
 
@@ -243,11 +291,6 @@ footer {
     <p>4 Bed House – from £340</p>
     <p>5+ Bed House – from £400</p>
   </div>
-
-  <p>
-    Prices apply to standard-condition or slightly soiled vacant properties.
-    Deep cleans, heavy soiling, or neglected properties are quoted separately.
-  </p>
 </section>
 
 <section id="contact">
@@ -263,7 +306,7 @@ footer {
     <button type="submit">Send Message</button>
 
     <div class="contact-details">
-      <p>📞 07732813072</p>
+      <p>📞 07732 813072</p>
       <a href="mailto:info@letreadygo.co.uk">✉️ info@letreadygo.co.uk</a>
     </div>
   </form>
