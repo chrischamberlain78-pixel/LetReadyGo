@@ -12,12 +12,20 @@
   padding: 0;
 }
 
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
 /* BODY */
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #000;
   line-height: 1.6;
-  background: url("background-cleaning.png") center / cover fixed no-repeat;
+  background: url("background-cleaning.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* HEADER */
@@ -52,6 +60,7 @@ nav a {
   border-radius: 999px;
   color: #000;
   background: linear-gradient(to bottom, #f7f7f7, #e5e5e5);
+  border: 3px solid #c0c0c0;
   box-shadow:
     inset 0 1px 0 #ffffff,
     0 4px 0 #bdbdbd,
@@ -80,6 +89,19 @@ section {
     inset 0 1px 0 rgba(255,255,255,0.35),
     0 4px 0 #238646,
     0 10px 18px rgba(0,0,0,0.35);
+  text-shadow:
+    -1px -1px 0 #1d6e3b,
+     1px -1px 0 #1d6e3b,
+    -1px  1px 0 #1d6e3b,
+     1px  1px 0 #1d6e3b;
+}
+
+/* SMALL PILLS */
+.section-title.small {
+  font-size: 1.1rem;
+  padding: 8px 20px;
+  max-width: 560px;
+  margin: 0 auto 14px;
 }
 
 /* TEXT */
@@ -88,6 +110,14 @@ section {
   font-size: 1.05rem;
   font-weight: 700;
   margin-bottom: 20px;
+}
+
+/* USP */
+.usp {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin: 10px 0 26px;
 }
 
 /* LISTS */
@@ -101,30 +131,37 @@ section {
   margin-bottom: 10px;
 }
 
-/* PRICING */
+/* PRICING – MIXED CREAM / BEIGE / BROWN */
 .price-box {
-  background: linear-gradient(to bottom, #1a1a1a, #000);
-  color: #ffffff;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 247, 230, 0.85) 0%,
+      rgba(235, 222, 195, 0.82) 35%,
+      rgba(210, 190, 155, 0.80) 70%,
+      rgba(185, 160, 125, 0.78) 100%
+    );
+  color: #000;
   padding: 26px;
   border-radius: 18px;
   margin-bottom: 25px;
-  border: 2px solid #2e9f55;
+  border: 2px solid rgba(90, 70, 45, 0.7);
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.12),
-    0 6px 0 #000,
-    0 12px 20px rgba(0,0,0,0.7);
+    inset 0 2px 4px rgba(255,255,255,0.6),
+    inset 0 -2px 6px rgba(120,90,60,0.25),
+    0 10px 22px rgba(0,0,0,0.35);
 }
 
 .price-box h3 {
+  margin-bottom: 14px;
   font-size: 1.35rem;
   font-weight: 900;
   text-align: center;
-  margin-bottom: 14px;
 }
 
 .price-box p {
+  font-weight: 800;
   text-align: center;
-  font-weight: 700;
 }
 
 /* CONTACT FORM */
@@ -155,80 +192,22 @@ form button {
   color: #ffffff;
   font-size: 1.05rem;
   font-weight: 900;
-  border: none;
+  border: 3px solid #174bb3;
   border-radius: 999px;
   cursor: pointer;
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,0.4),
     0 4px 0 #174bb3,
     0 10px 16px rgba(0,0,0,0.35);
+  margin-bottom: 18px;
 }
 
 /* CONTACT DETAILS */
 .contact-details {
-  margin-top: 18px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.contact-pill {
-  background: #000;
-  color: #fff;
-  padding: 8px 18px;
-  border-radius: 999px;
-  font-weight: 800;
-  font-size: 0.95rem;
-  border: 2px solid #1c5fd4;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.2),
-    0 4px 10px rgba(0,0,0,0.5);
-}
-
-.contact-pill a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* DESIGN CREDIT */
-.design-credit {
   text-align: center;
-  margin: 32px auto 18px;
-}
-
-.design-credit span {
-  display: block;
-  font-family: "Segoe Script", "Brush Script MT", "Lucida Handwriting", cursive;
-  font-size: 1.35rem;
-  font-weight: 700;
-  margin-top: 6px;
-  margin-bottom: 2px;
-  color: #000;
-  text-shadow:
-    0 0 4px rgba(46,159,85,0.35),
-    0 0 8px rgba(46,159,85,0.25),
-    0 2px 2px rgba(0,0,0,0.25);
-}
-
-/* LOGO BUTTON – ROUNDED + AFTERGLOW */
-.design-credit img {
-  max-width: 120px;
-  height: auto;
-  opacity: 0.95;
-  border-radius: 16px;
-  border: 2px solid #1c5fd4;
-  box-shadow:
-    0 0 6px rgba(28,95,212,0.35),
-    0 6px 16px rgba(0,0,0,0.35);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.design-credit img:hover {
-  box-shadow:
-    0 0 10px rgba(28,95,212,0.55),
-    0 8px 22px rgba(0,0,0,0.45);
-  transform: translateY(-1px);
+  font-weight: 800;
+  font-size: 1.05rem;
+  margin-top: 14px;
 }
 
 /* TAGLINE */
@@ -239,15 +218,6 @@ form button {
 
 .tagline img {
   max-width: 90%;
-}
-
-/* FOOTER */
-footer {
-  background: #000;
-  color: #ffffff;
-  text-align: center;
-  padding: 18px;
-  font-weight: 700;
 }
 </style>
 </head>
@@ -266,16 +236,26 @@ footer {
 
 <section>
   <div class="section-title">Who We Are</div>
+
   <p class="main-text">
-    LetReadyGo™ provides professional end-of-tenancy cleaning and property
-    clearance services for landlords, letting agents, and vacant or
-    pre-move-in properties. We focus on clean, inspection-ready results
-    with no fuss.
+    LetReadyGo™ is a professional property turnaround service specialising in
+    end-of-tenancy cleaning and clearance for vacant homes. We work closely
+    with landlords, letting agents, and property managers to ensure properties
+    are left clean, compliant, and ready for inspection or re-letting.
   </p>
+
+  <div class="usp">
+    One visit. One standard. Properties left clean, cleared, and let-ready.
+  </div>
 </section>
 
 <section id="services">
   <div class="section-title">Our Services</div>
+
+  <p class="main-text">
+    We deliver thorough, inspection-ready cleaning and clearance services for
+    vacant and pre-move-in properties, with optional add-ons available where required.
+  </p>
 
   <ul class="main-list">
     <li>End of Tenancy Cleaning (EOT)</li>
@@ -285,11 +265,23 @@ footer {
     <li>Steam Cleaning (Kitchens & Bathrooms)</li>
     <li>Appliance & Oven Cleaning</li>
   </ul>
+</section>
 
-  <br>
+<section>
+  <div class="section-title small">Complimentary Carpet Clean (One Room Included)</div>
+
+  <p class="main-text">
+    Each end-of-tenancy clean includes one complimentary carpet clean of choice.
+    Applies to one standard-size room with a standard-condition or lightly
+    soiled carpet. Additional rooms are quoted separately. Heavily stained or
+    damaged carpets are not guaranteed.
+  </p>
+</section>
+
+<section>
+  <div class="section-title small">Garden Tidy (Included)</div>
 
   <ul class="main-list">
-    <li><strong>Basic Garden Tidy (Included)</strong></li>
     <li>Light grass cut and quick tidy</li>
     <li>Light rubbish removal and sweep-down</li>
     <li>No landscaping or heavy clearance</li>
@@ -304,18 +296,18 @@ footer {
   <div class="section-title">Pricing</div>
 
   <div class="price-box">
-    <h3>Flats</h3>
-    <p>1 Bed Flat – from £150</p>
-    <p>2 Bed Flat – from £200</p>
-    <p>3 Bed Flat – from £260</p>
+    <h3>Flats & Apartments</h3>
+    <p>1 Bed – from £150</p>
+    <p>2 Bed – from £200</p>
+    <p>3 Bed – from £260</p>
   </div>
 
   <div class="price-box">
     <h3>Houses</h3>
-    <p>2 Bed House – from £220</p>
-    <p>3 Bed House – from £280</p>
-    <p>4 Bed House – from £340</p>
-    <p>5+ Bed House – from £400</p>
+    <p>2 Bed – from £220</p>
+    <p>3 Bed – from £280</p>
+    <p>4 Bed – from £340</p>
+    <p>5+ Bed – from £400</p>
   </div>
 </section>
 
@@ -330,28 +322,15 @@ footer {
     <button type="submit">Send Message</button>
 
     <div class="contact-details">
-      <div class="contact-pill">📞 07732 813072</div>
-      <div class="contact-pill">
-        ✉️ <a href="mailto:info@letreadygo.co.uk">info@letreadygo.co.uk</a>
-      </div>
+      <p>📞 07732 813072</p>
+      <p>✉️ info@letreadygo.co.uk</p>
     </div>
   </form>
 </section>
 
-<div class="design-credit">
-  <span>Created By</span>
-  <a href="https://chrischamberlain78-pixel.github.io/simplesitestudio/" target="_blank" rel="noopener">
-    <img src="simplesitestudio.png" alt="SimpleSiteStudio">
-  </a>
-</div>
-
 <div class="tagline">
   <img src="tagline.png" alt="Clean. Cleared. Let-Ready.">
 </div>
-
-<footer>
-  © 2026 LetReadyGo™ — Clean. Cleared. Let-Ready.
-</footer>
 
 </body>
 </html>
