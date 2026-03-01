@@ -6,28 +6,22 @@
 <title>LetReadyGo | Property Clearance & Cleaning</title>
 
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+* { box-sizing:border-box; margin:0; padding:0; }
 
 /* SMOOTH SCROLL */
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior:smooth; }
 
 /* BODY */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #000;
-  line-height: 1.6;
-  background: url("background-cleaning.png") center / cover fixed no-repeat;
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  line-height:1.6;
+  background:url("background-cleaning.png") center / cover fixed no-repeat;
+  color:#000;
 }
 
-/* HEADER – DEEP, EXTENDED FADE */
-header {
-  background: linear-gradient(
+/* HEADER */
+header{
+  background:linear-gradient(
     to bottom,
     rgba(0,0,0,1) 0%,
     rgba(0,0,0,0.95) 55%,
@@ -35,223 +29,138 @@ header {
     rgba(0,0,0,0.4) 90%,
     rgba(0,0,0,0) 100%
   );
-  text-align: center;
+  text-align:center;
 }
+header img{ width:100%; display:block; }
 
-header img {
-  width: 100%;
-  display: block;
+/* NAV – DARKER GLASS PILLS */
+nav{
+  display:flex;
+  justify-content:center;
+  gap:16px;
+  padding:18px 0 14px;
 }
-
-/* NAV – PREMIUM, SHADOW ONLY */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  padding: 18px 0 14px;
-}
-
-nav a {
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 900;
-  padding: 12px 26px;
-  border-radius: 999px;
-  color: #ffffff;
-
-  background: linear-gradient(
+nav a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:900;
+  font-size:0.95rem;
+  padding:12px 26px;
+  border-radius:999px;
+  background:linear-gradient(
     to bottom,
-    rgba(255,255,255,0.35),
-    rgba(255,255,255,0.08)
+    rgba(255,255,255,0.18),
+    rgba(255,255,255,0.02)
   );
-
-  backdrop-filter: blur(6px);
-
+  backdrop-filter:blur(6px);
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.6),
-    inset 0 -4px 8px rgba(0,0,0,0.35),
-    0 14px 28px rgba(0,0,0,0.85);
-
-  text-shadow: 0 2px 4px rgba(0,0,0,0.9);
-  transition: all 0.18s ease;
+    inset 0 1px 0 rgba(255,255,255,0.35),
+    inset 0 -6px 10px rgba(0,0,0,0.65),
+    0 16px 30px rgba(0,0,0,0.9);
+  text-shadow:0 2px 6px rgba(0,0,0,1);
+  transition:all .18s ease;
 }
-
-nav a:hover {
-  transform: translateY(-3px);
+nav a:hover{
+  transform:translateY(-3px);
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.7),
-    inset 0 -4px 8px rgba(0,0,0,0.35),
-    0 22px 38px rgba(0,0,0,0.9);
+    inset 0 1px 0 rgba(255,255,255,0.45),
+    inset 0 -6px 10px rgba(0,0,0,0.7),
+    0 24px 40px rgba(0,0,0,0.95);
 }
 
 /* SECTIONS */
-section {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 0 20px;
-}
+section{ max-width:1000px; margin:30px auto; padding:0 20px; }
 
-/* SECTION TITLES – CREAM PILLS */
-.section-title {
-  background: linear-gradient(to bottom, #f2e7d7, #dcc6a8);
-  color: #000;
-  padding: 12px 30px;
-  border-radius: 999px;
-  text-align: center;
-  font-size: 1.35rem;
-  font-weight: 900;
-  margin-bottom: 18px;
-  border: 1px solid #000;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.9),
-    0 10px 20px rgba(0,0,0,0.5);
+/* TITLES */
+.section-title{
+  background:linear-gradient(to bottom,#f2e7d7,#dcc6a8);
+  border-radius:999px;
+  padding:12px 30px;
+  font-weight:900;
+  text-align:center;
+  margin-bottom:12px;
+  box-shadow:0 10px 20px rgba(0,0,0,.5);
 }
-
-.section-title.small {
-  font-size: 1.05rem;
-  padding: 8px 20px;
-  max-width: 520px;
-  margin: 0 auto 16px;
+.section-title.small{
+  font-size:1.05rem;
+  max-width:520px;
+  margin:0 auto 12px;
 }
 
 /* TEXT */
-.main-text {
-  text-align: center;
-  font-size: 1.05rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
+.main-text{ text-align:center; font-weight:700; margin-bottom:20px; }
 
 /* LISTS */
-.main-list {
-  font-size: 1.05rem;
-  font-weight: 800;
-  padding-left: 22px;
+.main-list{ font-weight:800; padding-left:22px; }
+.main-list li{ margin-bottom:10px; }
+
+/* IMAGES */
+.service-image{ text-align:center; margin:6px 0 18px; }
+.service-image img{
+  max-width:100%;
+  border-radius:14px;
+  box-shadow:0 10px 24px rgba(0,0,0,.45);
 }
 
-.main-list li {
-  margin-bottom: 10px;
-}
-
-/* PRICING – MIXED CREAM */
-.price-box {
-  background: linear-gradient(
+/* PRICING */
+.price-box{
+  background:linear-gradient(
     135deg,
-    rgba(245,235,220,0.65),
-    rgba(225,210,190,0.65),
-    rgba(210,195,170,0.65)
+    rgba(245,235,220,.65),
+    rgba(225,210,190,.65),
+    rgba(210,195,170,.65)
   );
-  color: #000;
-  padding: 26px;
-  border-radius: 18px;
-  margin-bottom: 25px;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.5),
-    0 10px 22px rgba(0,0,0,0.45);
+  padding:26px;
+  border-radius:18px;
+  margin-bottom:25px;
+  box-shadow:0 10px 22px rgba(0,0,0,.45);
+}
+.price-box h3{ text-align:center; font-weight:900; margin-bottom:14px; }
+.price-box p{ text-align:center; font-weight:700; }
+
+/* CONTACT */
+form{ max-width:600px; margin:0 auto 20px; }
+form input, form textarea{
+  width:100%;
+  padding:14px;
+  margin-bottom:15px;
+  border-radius:10px;
+  border:2px solid #000;
+}
+form button{
+  width:100%;
+  padding:14px;
+  background:linear-gradient(#2f80ed,#1c5fd4);
+  color:#fff;
+  font-weight:900;
+  border-radius:999px;
+  border:none;
+  box-shadow:0 12px 20px rgba(0,0,0,.45);
 }
 
-.price-box h3 {
-  margin-bottom: 14px;
-  font-size: 1.35rem;
-  font-weight: 900;
-  text-align: center;
-}
-
-.price-box p {
-  font-weight: 700;
-  text-align: center;
-}
-
-/* CONTACT FORM */
-form {
-  max-width: 600px;
-  margin: 0 auto 20px;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  border: 2px solid #000;
-  font-size: 1rem;
-}
-
-form textarea {
-  min-height: 120px;
-}
-
-form button {
-  width: 100%;
-  padding: 14px;
-  background: linear-gradient(to bottom, #2f80ed, #1c5fd4);
-  color: #ffffff;
-  font-size: 1.05rem;
-  font-weight: 900;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.4),
-    0 4px 0 #174bb3,
-    0 12px 20px rgba(0,0,0,0.45);
-}
-
-/* CONTACT DETAILS – CENTRED */
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-
-  max-width: fit-content;
-  margin: 18px auto 0;
-
-  padding: 10px 26px;
-  border-radius: 14px;
-  background: #000;
-  color: #fff;
-  font-weight: 800;
-  text-align: center;
-
-  box-shadow: 0 8px 18px rgba(0,0,0,0.6);
-}
-
-.contact-details a {
-  color: #fff;
-  text-decoration: none;
+/* CONTACT DETAILS */
+.contact-details{
+  background:#000;
+  color:#fff;
+  padding:10px 26px;
+  border-radius:14px;
+  text-align:center;
+  max-width:fit-content;
+  margin:18px auto 0;
 }
 
 /* DESIGN CREDIT */
-.design-credit {
-  text-align: center;
-  margin: 26px auto 12px;
-}
-
-.design-credit small {
-  display: block;
-  font-weight: 900;
-  margin-bottom: 6px;
-}
-
-.design-credit img {
-  max-width: 120px;
-  border-radius: 14px;
-  box-shadow:
-    0 0 14px rgba(255,255,255,0.45),
-    0 8px 18px rgba(0,0,0,0.6);
+.design-credit{ text-align:center; margin:26px auto 12px; }
+.design-credit small{ display:block; font-weight:900; margin-bottom:6px; }
+.design-credit img{
+  max-width:120px;
+  border-radius:14px;
+  box-shadow:0 0 14px rgba(255,255,255,.45),0 8px 18px rgba(0,0,0,.6);
 }
 
 /* TAGLINE */
-.tagline {
-  text-align: center;
-  margin: 40px auto 25px;
-}
-
-.tagline img {
-  max-width: 90%;
-}
+.tagline{ text-align:center; margin:40px auto 25px; }
+.tagline img{ max-width:90%; }
 </style>
 </head>
 
@@ -276,6 +185,7 @@ form button {
 
 <section id="services">
   <div class="section-title">Our Services</div>
+  <div class="service-image"><img src="kitchen.png" alt="Kitchen cleaning"></div>
 
   <ul class="main-list">
     <li>End of Tenancy Cleaning (EOT)</li>
@@ -286,20 +196,8 @@ form button {
     <li>Appliance & Oven Cleaning</li>
   </ul>
 
-  <br>
-
-  <ul class="main-list">
-    <li><strong>Basic Garden Tidy (Included)</strong></li>
-    <li>Light grass cut and quick tidy</li>
-    <li>Light rubbish removal and sweep-down</li>
-    <li>No landscaping or heavy clearance</li>
-  </ul>
-
-  <p class="main-text">
-    Heavy garden waste clearance can be quoted separately if required.
-  </p>
-
   <div class="section-title small">Complimentary Carpet Clean</div>
+  <div class="service-image"><img src="carpets.png" alt="Carpet cleaning"></div>
 
   <p class="main-text">
     One carpet of choice included with every end-of-tenancy clean. Applies to standard-condition carpets only. Heavily soiled or stained carpets cannot be guaranteed. Additional rooms quoted separately.
@@ -337,14 +235,14 @@ form button {
   </form>
 
   <div class="contact-details">
-    📞 07732 813072
-    <a href="mailto:info@letreadygo.co.uk">✉️ info@letreadygo.co.uk</a>
+    📞 07732 813072<br>
+    ✉️ info@letreadygo.co.uk
   </div>
 </section>
 
 <div class="design-credit">
   <small>Web design by</small>
-  <a href="https://chrischamberlain78-pixel.github.io/simplesitestudio/" target="_blank">
+  <a href="https://simplesitestudio.design" target="_blank">
     <img src="simplesitestudio.png" alt="SimpleSiteStudio">
   </a>
 </div>
