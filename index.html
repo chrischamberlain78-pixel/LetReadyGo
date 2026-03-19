@@ -87,6 +87,13 @@ section {
   border: 1px solid #000;
 }
 
+.section-title.small {
+  font-size: 1.05rem;
+  padding: 8px 20px;
+  max-width: 520px;
+  margin: 0 auto 12px;
+}
+
 /* IMAGES */
 .section-image {
   display: block;
@@ -100,6 +107,7 @@ section {
 .glass-box {
   background: rgba(255,255,255,0.55);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   padding: 18px;
   border-radius: 14px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
@@ -187,6 +195,12 @@ form button {
   background: #000;
   color: #fff;
   font-weight: 800;
+  max-width: fit-content;
+}
+
+.contact-details a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* DESIGN CREDIT */
@@ -215,7 +229,7 @@ form button {
 <body>
 
 <header>
-  <img src="header-logo.png">
+  <img src="header-logo.png" alt="LetReadyGo Logo">
 </header>
 
 <nav>
@@ -243,6 +257,7 @@ form button {
 
   <div class="glass-box">
     <ul class="main-list">
+      <li><strong>Residential Cleaning (One-Off & Deep Cleans)</strong></li>
       <li>End of Tenancy Cleaning (EOT)</li>
       <li>Pre-Move-In Deep Cleaning</li>
       <li>Property Clearance & Waste Removal</li>
@@ -270,7 +285,6 @@ form button {
   <div class="section-title">Pricing</div>
 
   <div class="pricing-wrapper">
-
     <div class="price-box">
       <h3>Flats / Apartments</h3>
       <p>1 Bed – from £150</p>
@@ -285,7 +299,6 @@ form button {
       <p>4 Bed – from £340</p>
       <p>5+ Bed – from £400</p>
     </div>
-
   </div>
 </section>
 
@@ -313,6 +326,19 @@ form button {
   </div>
 </section>
 
+<section>
+  <div class="section-title">Deep Cleaning</div>
+
+  <img src="karcher.png" class="section-image">
+
+  <div class="glass-box">
+    <p class="main-text">
+      Deep cleaning is offered where required and quoted separately based on property condition.
+      This ensures realistic pricing and avoids unnecessary costs on standard-condition properties.
+    </p>
+  </div>
+</section>
+
 <section id="contact">
   <div class="section-title">Contact</div>
 
@@ -324,8 +350,8 @@ form button {
   </form>
 
   <div class="contact-details">
-    📞 07732 813072
-    ✉️ info@letreadygo.co.uk
+    <div>📞 07732 813072</div>
+    <a href="mailto:info@letreadygo.co.uk">✉️ info@letreadygo.co.uk</a>
   </div>
 </section>
 
