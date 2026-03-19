@@ -12,7 +12,6 @@
   padding: 0;
 }
 
-/* SMOOTH SCROLL */
 html {
   scroll-behavior: smooth;
 }
@@ -25,7 +24,7 @@ body {
   background: url("background-cleaning.png") center / cover fixed no-repeat;
 }
 
-/* HEADER – EXTENDED FADE */
+/* HEADER */
 header {
   background: linear-gradient(
     to bottom,
@@ -53,31 +52,19 @@ nav {
 
 nav a {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 900;
-  padding: 10px 22px;
+  padding: 8px 20px;
   border-radius: 999px;
-  color: #fff;
-
+  color: #ffffff;
   background: linear-gradient(
     to bottom,
-    rgba(255,255,255,0.28),
-    rgba(255,255,255,0.08)
+    rgba(0,0,0,0.9),
+    rgba(0,0,0,0.65)
   );
-
-  backdrop-filter: blur(6px);
-
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.55),
-    inset 0 -4px 8px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.15),
     0 12px 24px rgba(0,0,0,0.85);
-
-  text-shadow: 0 2px 4px rgba(0,0,0,0.9);
-  transition: all 0.18s ease;
-}
-
-nav a:hover {
-  transform: translateY(-3px);
 }
 
 /* SECTIONS */
@@ -87,7 +74,7 @@ section {
   padding: 0 20px;
 }
 
-/* SECTION TITLES – CREAM PILLS */
+/* TITLES */
 .section-title {
   background: linear-gradient(to bottom, #f2e7d7, #dcc6a8);
   color: #000;
@@ -98,16 +85,25 @@ section {
   font-weight: 900;
   margin-bottom: 18px;
   border: 1px solid #000;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.9),
-    0 10px 20px rgba(0,0,0,0.45);
 }
 
-.section-title.small {
-  font-size: 1.05rem;
-  padding: 8px 20px;
-  max-width: 520px;
-  margin: 0 auto 16px;
+/* IMAGES */
+.section-image {
+  display: block;
+  max-width: 92%;
+  margin: 8px auto 18px;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.45);
+}
+
+/* GLASS BOX */
+.glass-box {
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(8px);
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  margin-bottom: 18px;
 }
 
 /* TEXT */
@@ -115,7 +111,6 @@ section {
   text-align: center;
   font-size: 1.05rem;
   font-weight: 700;
-  margin-bottom: 20px;
 }
 
 /* LISTS */
@@ -129,45 +124,34 @@ section {
   margin-bottom: 10px;
 }
 
-/* IMAGES IN SECTIONS */
-.section-image {
-  display: block;
-  max-width: 92%;
-  margin: 14px auto 22px;
-  border-radius: 18px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.45);
+/* PRICING WRAPPER */
+.pricing-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-/* PRICING */
+/* PRICING BOX */
 .price-box {
   background: linear-gradient(
     135deg,
-    rgba(245,235,220,0.65),
-    rgba(225,210,190,0.65),
-    rgba(210,195,170,0.65)
+    rgba(245,235,220,0.6),
+    rgba(225,210,190,0.6),
+    rgba(210,195,170,0.6)
   );
   color: #000;
   padding: 26px;
   border-radius: 18px;
-  margin-bottom: 25px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,0.5),
     0 10px 22px rgba(0,0,0,0.45);
 }
 
-.price-box h3 {
-  margin-bottom: 14px;
-  font-size: 1.35rem;
-  font-weight: 900;
-  text-align: center;
-}
-
-.price-box p {
-  font-weight: 700;
-  text-align: center;
-}
-
-/* CONTACT FORM */
+/* CONTACT */
 form {
   max-width: 600px;
   margin: 0 auto 20px;
@@ -180,30 +164,18 @@ form textarea {
   margin-bottom: 15px;
   border-radius: 10px;
   border: 2px solid #000;
-  font-size: 1rem;
-}
-
-form textarea {
-  min-height: 120px;
 }
 
 form button {
   width: 100%;
   padding: 14px;
   background: linear-gradient(to bottom, #2f80ed, #1c5fd4);
-  color: #ffffff;
-  font-size: 1.05rem;
+  color: #fff;
   font-weight: 900;
   border-radius: 999px;
   border: none;
-  cursor: pointer;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.4),
-    0 4px 0 #174bb3,
-    0 12px 20px rgba(0,0,0,0.45);
 }
 
-/* CONTACT DETAILS */
 .contact-details {
   display: flex;
   flex-direction: column;
@@ -215,13 +187,6 @@ form button {
   background: #000;
   color: #fff;
   font-weight: 800;
-  text-align: center;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.6);
-}
-
-.contact-details a {
-  color: #fff;
-  text-decoration: none;
 }
 
 /* DESIGN CREDIT */
@@ -230,18 +195,9 @@ form button {
   margin: 26px auto 12px;
 }
 
-.design-credit small {
-  display: block;
-  font-weight: 900;
-  margin-bottom: 6px;
-}
-
 .design-credit img {
   max-width: 120px;
   border-radius: 14px;
-  box-shadow:
-    0 0 14px rgba(255,255,255,0.45),
-    0 8px 18px rgba(0,0,0,0.6);
 }
 
 /* TAGLINE */
@@ -253,36 +209,13 @@ form button {
 .tagline img {
   max-width: 90%;
 }
-
-/* =========================
-   DESKTOP FIXES ONLY
-   ========================= */
-@media (min-width: 1100px) {
-
-  body {
-    background-attachment: scroll;
-  }
-
-  section {
-    max-width: 1200px;
-  }
-
-  nav a {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-
-  .section-image {
-    max-width: 80%;
-  }
-}
 </style>
 </head>
 
 <body>
 
 <header>
-  <img src="header-logo.png" alt="LetReadyGo Logo">
+  <img src="header-logo.png">
 </header>
 
 <nav>
@@ -293,102 +226,118 @@ form button {
 
 <section>
   <div class="section-title">Who We Are</div>
-  <p class="main-text">
-    LetReadyGo™ is a specialist property turnaround service for landlords and letting agents, delivering inspection-ready results with speed, consistency, and zero hassle.
-  </p>
-</section>
-
-<section>
-  <div class="section-title">Why Agents Use Us</div>
-  <p class="main-text">
-    Reliable turnaround cleans, clear communication, and realistic pricing.
-    No hidden extras. No vague promises. Just properties ready for the next tenant.
-  </p>
-</section>
-
-<section>
-  <div class="section-title">Vacant Property Specialists</div>
-  <p class="main-text">
-    We specialise in vacant and pre-move-in properties where speed and clarity matter most, helping reduce delays and support smooth check-ins.
-  </p>
-</section>
-
-<section>
-  <div class="section-title">Deep Cleaning</div>
-  <img src="karcher.png" class="section-image" alt="Deep cleaning equipment">
-  <p class="main-text">
-    Deep cleaning is offered where required and quoted separately based on property condition, ensuring realistic pricing without unnecessary costs.
-  </p>
+  <div class="glass-box">
+    <p class="main-text">
+      LetReadyGo™ is a specialist property turnaround service for landlords and letting agents,
+      delivering inspection-ready results with speed, consistency, and zero hassle.
+      We also offer residential cleaning for homeowners who want the same professional,
+      high-standard finish.
+    </p>
+  </div>
 </section>
 
 <section id="services">
   <div class="section-title">Our Services</div>
-  <img src="kitchen.png" class="section-image" alt="Kitchen cleaning">
 
-  <ul class="main-list">
-    <li>End of Tenancy Cleaning (EOT)</li>
-    <li>Pre-Move-In Cleaning</li>
-    <li>Property Clearance & Waste Removal</li>
-    <li>Carpet Cleaning & Extraction</li>
-    <li>Steam Cleaning (Kitchens & Bathrooms)</li>
-    <li>Appliance & Oven Cleaning</li>
-  </ul>
+  <img src="kitchen.png" class="section-image">
 
-  <div class="section-title small">Complimentary Carpet Clean</div>
-  <img src="carpets.png" class="section-image" alt="Carpet cleaning">
+  <div class="glass-box">
+    <ul class="main-list">
+      <li>End of Tenancy Cleaning (EOT)</li>
+      <li>Pre-Move-In Deep Cleaning</li>
+      <li>Property Clearance & Waste Removal</li>
+      <li>Carpet Cleaning & Extraction</li>
+      <li>Steam Cleaning</li>
+      <li>Oven Cleaning</li>
+    </ul>
+  </div>
 
-  <p class="main-text">
-    One carpet of choice included with every end-of-tenancy clean.
-    Applies to standard-condition carpets only. Heavily soiled or stained carpets cannot be guaranteed.
-    Additional rooms quoted separately.
-  </p>
+  <div class="section-title">Complimentary Carpet Clean</div>
+
+  <img src="carpets.png" class="section-image">
+
+  <div class="glass-box">
+    <p class="main-text">
+      One carpet of choice included with every end-of-tenancy clean.
+      Applies to standard-condition carpets only.
+      Heavily soiled or stained carpets cannot be guaranteed.
+      Additional rooms quoted separately.
+    </p>
+  </div>
 </section>
 
 <section id="pricing">
   <div class="section-title">Pricing</div>
 
-  <div class="price-box">
-    <h3>Flats / Apartments</h3>
-    <p>1 Bed – from £150</p>
-    <p>2 Bed – from £200</p>
-    <p>3 Bed – from £260</p>
-  </div>
+  <div class="pricing-wrapper">
 
-  <div class="price-box">
-    <h3>Houses</h3>
-    <p>2 Bed – from £220</p>
-    <p>3 Bed – from £280</p>
-    <p>4 Bed – from £340</p>
-    <p>5+ Bed – from £400</p>
+    <div class="price-box">
+      <h3>Flats / Apartments</h3>
+      <p>1 Bed – from £150</p>
+      <p>2 Bed – from £200</p>
+      <p>3 Bed – from £260</p>
+    </div>
+
+    <div class="price-box">
+      <h3>Houses</h3>
+      <p>2 Bed – from £220</p>
+      <p>3 Bed – from £280</p>
+      <p>4 Bed – from £340</p>
+      <p>5+ Bed – from £400</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="section-title">Residential Cleaning</div>
+
+  <img src="cleanhouse.png" class="section-image">
+
+  <div class="glass-box">
+    <p class="main-text">
+      We also offer residential cleaning for occupied homes, including one-off deep cleans,
+      seasonal resets, and pre-event or post-occasion cleans.
+    </p>
+
+    <ul class="main-list">
+      <li>One-off deep cleans</li>
+      <li>Kitchen & bathroom intensive cleans</li>
+      <li>Whole-home resets</li>
+      <li>Pre/post event cleans</li>
+    </ul>
+
+    <p class="main-text">
+      Residential cleaning is quoted based on property size and condition.
+    </p>
   </div>
 </section>
 
 <section id="contact">
   <div class="section-title">Contact</div>
 
-  <form name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact">
-    <input type="text" name="name" placeholder="Your name" required>
-    <input type="email" name="email" placeholder="Your email" required>
-    <textarea name="message" placeholder="How can we help?" required></textarea>
-    <button type="submit">Send Message</button>
+  <form>
+    <input type="text" placeholder="Your name">
+    <input type="email" placeholder="Your email">
+    <textarea placeholder="Message"></textarea>
+    <button>Send Message</button>
   </form>
 
   <div class="contact-details">
     📞 07732 813072
-    <a href="mailto:info@letreadygo.co.uk">✉️ info@letreadygo.co.uk</a>
+    ✉️ info@letreadygo.co.uk
   </div>
 </section>
 
 <div class="design-credit">
   <small>Web design by</small>
-  <a href="https://simplesitestudio.design" target="_blank">
-    <img src="simplesitestudio.png" alt="SimpleSiteStudio">
+  <a href="https://simplesitestudio.design">
+    <img src="simplesitestudio.png">
   </a>
 </div>
 
 <div class="tagline">
-  <img src="tagline.png" alt="Clean. Cleared. Let-Ready.">
+  <img src="tagline.png">
 </div>
 
 </body>
